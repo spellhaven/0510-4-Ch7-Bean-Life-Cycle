@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+	<!-- Namespace로 context를 설정하고 이것까지 써 줘야 annotation이 제대로 먹히네, 시붏얼. -->
+	<context:annotation-config></context:annotation-config>
+	
+	<bean id="jaehyun" class="com.spellhaven.spring0510_4.Student">
+		<constructor-arg>
+			<value>정재현</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>25</value>
+		</constructor-arg>	
+	</bean>
+	
+	<bean id="theeStallion" class="com.spellhaven.spring0510_4.OtherStudent">
+		<constructor-arg>
+			<value>메건 디 스탤리언</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>25</value>
+		</constructor-arg>	
+	</bean>
+
+</beans>
